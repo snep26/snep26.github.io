@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 id="title">
+		Форма отзыва
+	</h1>
+	
+	<div class="form__outer">
+		<p id="description">Расскажи о себе путник</p>
+		<form id="survey-form" method="GET" action="mailto:6trane666@gmail.com" enctype="text/plain">
+			<div class="row">
+				<div class="row__name">
+					<label id="name__label" for="name">
+						*Имя и Фамилия
+					</label>
+				</div>
+				<div class="row__info">
+					<input autofocus type="text" name="name" id="name" class="input__field" placeholder="Введите ваше имя и фамилию" required>
+				</div>
+			</div><!-- /.row -->
+
+			<div class="row">
+				<div class="row__name">
+					<label id="name__email" for="email">
+						*Email
+					</label>
+				</div>
+				<div class="row__info">
+					<input type="email" name="email" id="email" class="input__field" placeholder="Введите ваш email" required>
+				</div>
+			</div><!-- /.row -->
+		</form>
+	</div>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
