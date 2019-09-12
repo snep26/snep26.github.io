@@ -5,6 +5,7 @@ body {
 	background-color: #67FF7C;
 	font-family: 'Poiret One', cursive;
 	font-size: 22px;
+	font-weight: bold;
 }
 
 p {
@@ -35,13 +36,15 @@ p {
 }
 
 #description {
+	font-size: 24px;
 	font-weight: 700;
+	margin-bottom: 15px;
 }
 
 .row__name {
 	display: inline-block;
 	text-align: right;
-	width: 35%;
+	width: 42%;
 	vertical-align: top;
 	margin-top: 10px;
 	padding: 5px;
@@ -50,21 +53,67 @@ p {
 .row__info {
 	display: inline-block;
  	text-align: left;
- 	width: 50%;
+ 	width: 40%;
  	vertical-align: middle;
 }
 
 .input__field {
-	height: 22px;
-	width: 300px;
+	height: 24px;
+	width: 270px;
 	padding: 5px;
-	margin: 10px;
+	margin: 11px;
 	border: 1px solid #000;
 	border-radius: 3px;
 	outline: none;
 	font-family: 'Poiret One', cursive;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 700;
 }
 
+.dropdown {
+	height: 38px;
+	width: 200px;
+	padding: 5px;
+	margin: 11px;
+	border: 1px solid #000;
+	border-radius: 3px;
+	outline: none;
+	font-family: 'Poiret One', cursive;
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+	cursor: pointer;
+}
+
+.radio, .checkbox {
+	position: relative;
+	left: -45px;
+	margin-left: 10px;
+	padding-bottom: 10px;
+	display: block;
+	font-size: 15px;
+}
+
+.gvs{
+	float: left;
+	margin-right: 5px;
+}
+button {
+	background-color: #1D8348;
+	color: white;
+	font-size: 22px;
+	font-family: 'Poiret One', cursive;
+	text-transform: uppercase;
+	border-radius: 6px;
+	border: 0px solid;
+	height: 40px;
+	width: 150px;
+	margin: 15px 10px;
+	transition: .3s linear;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #186A3B;
+}
 /*font-family: 'Poiret One', cursive;*/

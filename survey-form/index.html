@@ -16,8 +16,8 @@
 		<form id="survey-form" method="GET" action="mailto:6trane666@gmail.com" enctype="text/plain">
 			<div class="row">
 				<div class="row__name">
-					<label id="name__label" for="name">
-						*Имя и Фамилия
+					<label id="name-label" for="name">
+						*Имя и Фамилия:
 					</label>
 				</div>
 				<div class="row__info">
@@ -27,14 +27,145 @@
 
 			<div class="row">
 				<div class="row__name">
-					<label id="name__email" for="email">
-						*Email
+					<label id="email-label" for="email">
+						*Email:
 					</label>
 				</div>
 				<div class="row__info">
 					<input type="email" name="email" id="email" class="input__field" placeholder="Введите ваш email" required>
 				</div>
 			</div><!-- /.row -->
+
+			<div class="row">
+				<div class="row__name">
+					<label id="number-label" for="age">
+						*Возраст:
+					</label>
+				</div>
+				<div class="row__info">
+					<input type="number" name="age" id="number" min="1" max="110" class="input__field" placeholder="Введите ваш возраст" required>
+				</div>
+			</div><!-- /.row -->
+
+			<div class="row">
+				<div class="row__name">
+					<label for="social__status">
+						*Какой вариант описывает вас:
+					</label>
+				</div>
+				<div class="row__info">
+					<select name="social__status" id="dropdown" class="dropdown">
+						<option value="disabled value">
+							Выберите из списка
+						</option>
+						<option value="student">
+							Студент
+						</option>
+						<option value="school">
+							Шкила
+						</option>
+						<option value="penis">
+							Пенис
+						</option>
+						<option value="patay">
+							Патау
+						</option>
+						<option value="borow">
+							Боров
+						</option>
+						<option value="glek">
+							Тупа глэк
+						</option>
+					</select>
+				</div>
+			</div><!-- /.row -->
+
+			<div class="row">
+				<div class="row__name">
+					<label for="gvs">
+						Ваша любимая аесня "Велакеса":
+					</label>
+				</div>
+				<div class="row__info">
+					<ul style="list-style: none;">
+						<li class="radio">
+							<label>
+								Я енотик полоскун (I’m a Raccoon)
+								<input name="radio-buttons" value="1" type="radio" class="gvs">
+							</label>
+						</li>
+						<li class="radio">
+							<label>
+								Расколбас (Raskolbas)
+								<input name="radio-buttons" value="2" type="radio" class="gvs">
+							</label>
+						</li>
+						<li class="radio">
+							<label>
+								Пароль 1488 (Password 1488)
+								<input name="radio-buttons" value="3" type="radio" class="gvs">
+							</label>
+						</li>
+						<li class="radio">
+							<label>
+								Тупа отдыхаю
+								<input name="radio-buttons" value="4" type="radio" class="gvs">
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /.row -->
+
+			<div class="row">
+				<div class="row__name">
+					<label for="why">
+						Почему ты смотриш Валакаса:
+						<br>(можно несколько вариантов)
+					</label>
+				</div>
+				<div class="row__info">
+					<ul id="why" style="list-style: none;">
+						<li class="checkbox">
+							<label>
+								<input name="why" value="1" type="checkbox" class="gvs">
+								Рофлы деда
+							</label>
+						</li>
+						<li class="checkbox">
+							<label>
+								<input name="why" value="2" type="checkbox" class="gvs">
+								От скуки
+							</label>
+						</li>
+						<li class="checkbox">
+							<label>
+								<input name="why" value="3" type="checkbox" class="gvs">
+								Хачу
+							</label>
+						</li>
+						<li class="checkbox">
+							<label>
+								<input name="why" value="1" type="checkbox" class="gvs">
+								Я "КИКИ"
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /.row -->
+
+			<div class="row">
+				<div class="row__name">
+					<label for="comments">
+						Вапросики?:
+					</label>
+				</div>
+				<div class="row__info">
+					<textarea name="comment" id="comments" cols="30" rows="10" class="input__field" style="height: 60px; resize: vertical;" placeholder="Пишите ваши вапросики здесь"></textarea>
+				</div>
+			</div><!-- /.row -->
+			<button id="submit" type="submit">
+				Отправить
+			</button>
 		</form>
 	</div>
 
