@@ -1,0 +1,163 @@
+/* === 0. Settings === */
+*,
+*:before,
+*:after, {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box
+}
+
+body {
+	background-color: #000428;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* === Settings === */
+
+/* === 1. Navbar === */
+.nav {
+background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	border-bottom: 1px solid #000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-link {
+	border-bottom: 1px solid #fff;
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+	opacity: .75;
+	text-decoration: none;
+	transition: .2s linear;
+}
+
+.nav-link:hover {
+	font-size: 23px;
+	opacity: 1;
+	border-bottom: 1px solid #000;
+}
+/* === Navbar === */
+
+/* === 2. Welcome === */
+#welcome-section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center;
+}
+
+
+.welcome-title {
+	font-size: 100px;
+	font-weight: 700;
+	padding-bottom: 40px;
+}
+
+.welcome-text {
+	font-size: 50px;
+	font-style: italic;
+	color: #E74C3C;
+}
+/* === Welcome === */
+
+/* === 3. Project === */
+#projects {
+	text-align: center;
+	padding-top: 50px;
+	border-top: 2px solid #fff;
+}
+
+.intro {
+	margin-top: 50px;
+	font-size: 45px;
+	font-weight: 700;
+	border-bottom: 1px solid #fff;
+	max-width: 700px;
+	margin: 50px auto 100px;
+}
+
+.projects-grid {
+	margin: 0 20px;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.project-tile {
+	text-decoration: none;
+	background-color: #fff;
+	margin-bottom: 40px;
+	transition: .2s linear;
+}
+
+.img {
+	width: 370px;
+}
+
+
+.project-text {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #000;
+	padding-bottom: 15px;
+}
+
+
+.project-tile:hover .project-text {
+	color: #E74C3C;
+}
+/* === Project === */
+
+#contact {
+	text-align: center;
+}
+
+.ct {
+	margin-bottom: 15px;
+}
+
+.contact-links {
+	margin-top: 20px;
+}
+
+#profile-link {
+	transition: .3s linear;
+	color: #fff;
+	font-size: 25px;
+	margin-right: 20px;
+}
+
+#profile-link:hover {
+	color: #E74C3C;
+}
+
+@media (max-width:1000px) {
+	#profile-link {
+		font-size: 35px;
+	}
+}
