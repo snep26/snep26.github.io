@@ -652,3 +652,135 @@ body {
 /*
 ===section about===
 */
+
+/*
+===section contacts===
+*/
+.section-contacts {
+	overflow: hidden;
+}
+
+.section-contacts__container {
+	position: relative;
+}
+
+.section-contacts__container::before {
+	content: '';
+	position: absolute;
+	background: url(../img/tomatos.jpg) no-repeat;
+	background-size: cover;
+	width: 672px;
+	height: 397px;
+	right: -350px;
+	bottom: -100px;
+}
+
+.section-contacts__title {
+	margin-bottom: 90px;
+}
+
+.contacts {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.contacts__start {
+	width: 50%;
+}
+
+.contacts__map {
+	height: 450px;
+	background: #000;
+}
+
+.contacts__end {
+	width: 50%;
+	padding-left: 40px;
+}
+
+.contacts__item {
+	margin-bottom: 35px;
+}
+
+.contacts__title {
+	margin: 0 0 5px;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	color: #000;
+}
+
+.contacts__text {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.socials {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.socials__item {
+	margin-right: 10px;
+}
+
+.socials__link {
+	display: inline-block;
+}
+
+.social__icon {
+	transition: linear fill .3s;
+}
+
+.social__icon:hover {
+	fill: #ff5441;
+}
+
+@media (max-width: 1800px) {
+  .section-contacts__container::before {
+    right: -250px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .section-contacts__container::before {
+    right: -150px;
+    bottom: -200px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .section-contacts__container::before {
+    right: -100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .section-contacts__container::before {
+    right: -50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-contacts__container::before {
+    content: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .contacts__map {
+   	height: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-contacts {
+    padding-bottom: 0;
+  }
+/*
+===section contacts===
+*/
