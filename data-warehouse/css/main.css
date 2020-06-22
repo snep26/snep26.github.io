@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 1120px;
+	max-width: 100%;
+}
+
+/*===HEADER===*/
+.header__top {
+	display: flex;
+}
+
+.menu__link {
+	margin-left: 40px;
+	align-items: center;
+}
+
+.header__menu {
+	justify-content: center;
+	height: 100%;
+}
+
+.menu__link:first-child {
+	margin-left: 120px;
+}
+/*===HEADER===*/
