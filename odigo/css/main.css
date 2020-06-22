@@ -844,7 +844,7 @@ img {
 
   .today__card-text {
     margin-bottom: 20px;
-  s}
+  }
 
   .tour__title {
     margin-bottom: 15px;
@@ -864,6 +864,7 @@ img {
   .footer__nav {
     width: 100%;
   }
+}
 
 @media screen and (max-width: 376px) {
   .intro__title {
@@ -884,4 +885,5 @@ img {
     font-size: 21px;
     line-height: 25px;
   } 
+}
 /*====================*/
