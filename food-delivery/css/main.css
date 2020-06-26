@@ -369,13 +369,24 @@ textarea {
 
 /*===FONTS===*/
 
+/*light*/
+@font-face {
+   font-family: 'Helvetica Neue';
+   src: local('Helvetica Neue Light'), local('Helvetica-Neue-Light'),
+       url('/food-delivery/fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+       url('/food-delivery/fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+       url('/food-delivery/fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+   font-weight: 300;
+   font-style: normal;
+ }
+
 /*regular*/
 @font-face {
    font-family: 'Helvetica Neue';
    src: local('Helvetica Neue Roman'), local('Helvetica-Neue-Roman'),
-       url('fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
-       url('fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
-       url('fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+       url('/food-delivery/fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+       url('/food-delivery/fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+       url('/food-delivery/fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
    font-weight: 400;
    font-style: normal;
  }
@@ -384,9 +395,9 @@ textarea {
  @font-face {
    font-family: 'Helvetica Neue';
    src: local('Helvetica Neue Medium'), local('Helvetica-Neue-Medium'),
-       url('fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
-       url('fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
-       url('fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+       url('/food-delivery/fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+       url('/food-delivery/fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+       url('/food-delivery/fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
    font-weight: 500;
    font-style: normal;
  }
@@ -395,9 +406,9 @@ textarea {
  @font-face {
    font-family: 'Helvetica Neue';
    src: local('Helvetica Neue Bold'), local('Helvetica-Neue-Bold'),
-       url('fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
-       url('fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
-       url('fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+       url('/food-delivery/fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+       url('/food-delivery/fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+       url('/food-delivery/fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
    font-weight: 700;
    font-style: normal;
  }
@@ -409,12 +420,13 @@ body {
    font-family: 'Helvetica Neue';
    font-weight: 400;
    font-size: 16px;
-   padding: 0 10px;
+   color: #fff;
 }
 
 .wrapper {
-   width: 1110px;
+   max-width: 1110px;
    margin: 0 auto;
+   padding: 0 20px;
 }
 /*===MAIN END===*/ 
 
@@ -424,6 +436,12 @@ body {
    width: 100%;
    top: 0;
    left: 0;
+   border-bottom: solid 2px #ffffff21; 
+   border-op
+}
+
+.header__logo {
+   margin: auto 0;
 }
 
 .header__wrapper {
@@ -434,10 +452,114 @@ body {
 }
 
 .header__logo-img {
-   width: 200px;
+   width: 250px;
+}
+
+.header__nav {
+   margin: auto 0;
 }
 
 .header__list {
    display: flex;
+   flex-wrap: wrap;
+}
+
+.header__item {
+   margin-right: 40px;
+   font-weight: 700;
+}
+
+.header__item:last-child {
+   margin-right: 0;
+}
+
+.header__link {
+   font-size: 17px;
+   color: #ffffff;
+   text-decoration: none;
+   transition: linear color .3s;
+}
+
+.header__link:hover, .header__link:active {
+   color: #34C759;
 }
 /*===HEADER END===*/
+
+/*===INTRO START===*/
+.intro {
+   height: 100vh;
+   background: url(/food-delivery/img/intro-bg.jpg) no-repeat center;
+   background-size: cover;
+   padding-top: 170px;
+}
+
+.intro__title {
+   font-weight: 300;
+   font-size: 72px;
+   line-height: 87px;
+   letter-spacing: 0.1em;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+.intro__title b {
+   font-weight: 700;
+}
+
+.intro__text {
+   margin: 0 auto;
+   max-width: 600px;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 26px;
+   letter-spacing: -0.2px;
+   text-align: center;
+   opacity: 0.7;
+   margin-bottom: 40px;
+}
+
+.intro__btn {
+   display: block;
+   width: 220px;
+   height: 70px;
+   margin: 0 auto 70px auto;
+   font-size: 18px;
+   line-height: 70px;
+   font-weight: 700;
+   color: #1A1A1A;
+   background: #34C759;
+   border-radius: 43px;
+   text-align: center;
+   letter-spacing: 0.2em;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+.intro__contacts {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.intro__contacts__item {
+   text-align: center;
+}
+
+.intro__svg {
+   width: 20px;
+   fill: #fff;
+   margin-bottom: 15px;
+}
+
+.intro__contact-title {
+   font-weight: 500;
+   line-height: 30px;
+}
+
+.intro__contact-subtitle  {
+   font-weight: 500;
+   font-size: 14px;
+   opacity: 0.5;
+}
+
+/*===INTRO END*/
