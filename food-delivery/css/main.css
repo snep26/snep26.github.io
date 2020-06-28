@@ -421,14 +421,115 @@ body {
    font-weight: 400;
    font-size: 16px;
    color: #fff;
+   background-color: #1A1A1A;
 }
 
 .wrapper {
    max-width: 1110px;
    margin: 0 auto;
-   padding: 0 20px;
+   padding: 0 10px;
+}
+
+.section__titles {
+    padding-top: 70px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.section__title {
+    font-size: 100px;
+    line-height: 150px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #303030;
+    text-transform: uppercase;
+}
+
+.section__title::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #34C759;;
+}
+
+.section__subtitle {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    color: #D9D9D9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 110px;
+    text-transform: capitalize;
 }
 /*===MAIN END===*/ 
+
+/*===SLICK SLIDER START===*/
+    /* Слайдер */
+    .slick-slider{
+        padding: 0 90px;
+    }
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized{}
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted{}
+    /* Ограничивающая оболочка */
+    .slick-list {
+        overflow: hidden;
+    }
+    /* Лента слайдов */
+    .slick-track{
+        display: flex;
+    }
+    /* Слайд */
+    .slick-slide{}
+    /* Слайд активный (показывается) */
+    .slick-slide.slick-active{}
+    /* Слайд основной */
+    .slick-slide.slick-current{}
+    /* Слайд по центру */
+    .slick-slide.slick-center{}
+    /* Клонированный слайд */
+    .slick-slide.slick-cloned{}
+    /* Стрелка */
+    .slick-arrow{
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        font-size: 0;
+        width: 20px;
+        height: 20px;
+        padding: 22px;
+        border: 1px solid #303030;
+        border-radius: 50%;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev{
+        left: 0;
+        background: url(/food-delivery/img/arrow-left.png) center no-repeat;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next{
+        right: 0;
+        background: url(/food-delivery/img/arrow-right.png) center no-repeat;
+    }
+    /* Стрелка не активная */
+    .slick-arrow.slick-disabled{}
+    /* Точки (булиты) */
+    .slick-dots{}
+    .slick-dots li{}
+    /* Активная точка */
+    .slick-dots li.slick-active{}
+    /* Элемент точки */
+    .slick-dots li button{}
+/*===SLICK SLIDER END===*/
 
 /*===HEADER START===*/
 .header {
@@ -437,7 +538,6 @@ body {
    top: 0;
    left: 0;
    border-bottom: solid 2px #ffffff21; 
-   border-op
 }
 
 .header__logo {
@@ -490,7 +590,6 @@ body {
    height: 100vh;
    background: url(/food-delivery/img/intro-bg.jpg) no-repeat center;
    background-size: cover;
-   padding-top: 170px;
 }
 
 .intro__title {
@@ -500,6 +599,7 @@ body {
    letter-spacing: 0.1em;
    text-transform: capitalize;
    text-align: center;
+   padding-top: 170px;
 }
 
 .intro__title b {
@@ -532,7 +632,11 @@ body {
    text-align: center;
    letter-spacing: 0.2em;
    text-decoration: none;
-   vertical-align: middle;
+   transition: linear background .25s;
+}
+
+.intro__btn:hover {
+    background-color: #20873a;
 }
 
 .intro__contacts {
@@ -546,7 +650,7 @@ body {
 }
 
 .intro__svg {
-   width: 20px;
+   width: 25px;
    fill: #fff;
    margin-bottom: 15px;
 }
@@ -561,5 +665,281 @@ body {
    font-size: 14px;
    opacity: 0.5;
 }
+/*===INTRO END===*/
 
-/*===INTRO END*/
+/*===ABOUT START===*/
+.about__wrapper {
+    position: relative;
+    background-color: #262626;
+    padding-bottom: 90px;
+}
+
+.about__titles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    padding-top: 30px;
+    width: 100%;
+    background-color: #262626;
+    text-align: center;
+}
+
+.about__title {
+    font-size: 100px;
+    line-height: 150px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #303030;
+    text-transform: uppercase;
+}
+
+.about__subtitle {
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.2em;
+    color: #D9D9D9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 70px;
+    text-transform: capitalize;
+}
+
+.about__slider-text {
+    max-width: 700px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #A6A6A6;
+    margin: 0 auto 90px auto;
+}
+
+.about__slider-items {
+    position: relative;
+    margin: 0 65px;
+}
+
+.slider-img{
+    margin: 0 auto;
+}
+/*===ABOUT END===*/
+
+/*===WORK START===*/
+.work__cards {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 19%;
+    background: #252525;
+    padding: 0 25px;
+    margin: 0 0 30px 0;
+    border-radius: 5px;
+    transition: all linear .3s;
+}
+
+.work__card:hover {
+    background: #34C759;
+    color: #191919;
+}
+
+.work__card:hover .work__card-text {
+    color: #191919;
+}
+
+.work__card:hover .work__card-title::after {
+    background-color: #191919;
+}
+
+.work__card-title {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+    letter-spacing: -0.275px;
+    text-transform: capitalize;
+    padding-top: 35px;
+}
+
+.work__card-title::after {
+    display: block;
+    content: "";
+    width: 55px;
+    height: 2px;
+    margin: 10px 0;
+    background-color: #34C759;
+    transition: all linear .3s;
+}
+
+.work__card-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.1625px;
+    color: #ffffff80;;
+    padding-bottom: 40px;
+    transition: all linear .3s;
+}
+/*===WORK END===*/
+
+/*===DISHES START===*/
+.dishes__items {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.dishes__item {
+    max-width: 350px;
+    background: #252525;
+    position: relative;
+    padding-bottom: 30px;
+    border-radius: 7px;
+    grid-column: span 2;
+    margin-bottom: 30px;
+}
+
+.dishes__item-img {
+    border-radius: 7px 7px 0 0;
+}
+
+.dishes__item-title {
+    margin: 30px 30px 0 30px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 30px;
+    color: #D9D9D9;
+}
+
+.dishes__item-subtitle {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.15px;
+    color: #A4A8B2;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.dishes__item-text {
+    font-size: 13px;
+    line-height: 18px;
+    color: #85878C;
+    margin: 0 30px 35px 30px;
+}
+
+.dishes__items-order {
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 36px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff80;
+    background-color: #262626;
+    border: 2px solid #303030;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all linear .4s;
+}
+
+.dishes__items-order:hover {
+    background-color: #34C759;
+    border: 2px solid transparent;
+    color: #252525;
+}
+
+/*star rating*/
+
+.dishes__items-stats {
+	overflow: hidden;
+    width: 200px;
+    position: absolute;
+    bottom: 40px;
+    left: -50px;
+}
+.dishes__items-stats:not(:checked) > input {
+	display: none;
+}
+.dishes__items-stats:not(:checked) > label {
+	float: right;
+	width: 25px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 22px;
+	line-height: 22px;
+    color: lightgrey;
+
+}
+.dishes__items-stats:not(:checked) > label:before {
+	content: '★';
+}
+.dishes__items-stats > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.dishes__items-stats:not(:checked) > label:hover,
+.dishes__items-stats:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.dishes__items-stats > input:checked + label:hover,
+.dishes__items-stats > input:checked + label:hover ~ label,
+.dishes__items-stats > input:checked ~ label:hover,
+.dishes__items-stats > input:checked ~ label:hover ~ label,
+.dishes__items-stats > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.dishes__items-stats > label:active {
+	position: relative;
+}
+
+
+/*===DISHES END===*/
+
+/*===FOOTER START===*/
+.footer {
+    margin-top: 30px;
+    padding-top: 40px;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer__contacts {
+    padding-bottom: 40px;
+}
+
+.footer__logo {
+    border-top: solid 2px #ffffff21; 
+}
+
+.footer__logo-img {
+    display: block;
+    width: 210px;
+    margin: 30px auto 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer__logo-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: #737373;
+    padding-bottom: 30px;
+}
+/*FOOTER END===*/
