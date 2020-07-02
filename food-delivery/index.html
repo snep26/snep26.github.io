@@ -19,7 +19,7 @@
 <body>
 
    <!-- header start -->
-   <div class="header">
+   <div class="header" id="header">
       <div class="wrapper">
          <div class="header__wrapper">
             <div class="header__logo">
@@ -30,7 +30,7 @@
             <div class="header__nav">
                <ul class="header__list">
                   <li class="header__item">
-                     <a href="#!" class="header__link">
+                     <a href="#menu" class="header__link js-scroll">
                         Menu
                      </a>
                   </li>
@@ -186,7 +186,7 @@
    <!-- work end -->
    
    <!-- dishes start -->
-   <section class="dishes">
+   <section class="dishes" id="menu">
       <div class="wrapper">
          <div class="section__titles">
             <h2 class="section__title">
@@ -376,9 +376,83 @@
                This month's chefs
             </h3>
          </div>
+         <div class="chefs__items">
+            <div class="chefs__item">
+               <div class="chefs__item-content">
+                  <img src="/food-delivery/img/chefs-1.png" alt="Gregory Flores" class="chefs__item-avatar">
+                  <div class="chefs__item-text">
+                     <p class="chefs__item-name">
+                        Gregory Flores
+                     </p>
+                     <p class="chefs__item-subtitle">
+                        Chef of the cold
+                     </p>
+                  </div>
+               </div>
+               <div class="chefs__item-pic">
+                  <img src="/food-delivery/img/gregory-img-big.jpg" alt="" class="chefs__item-img img-big">
+                  <img src="/food-delivery/img/gregory-img-sm1.jpg" alt="" class="chefs__item-img img-sm">
+                  <img src="/food-delivery/img/gregory-img-sm2.jpg" alt="" class="chefs__item-img img-sm">
+               </div>
+            </div>
+            <div class="chefs__item">
+               <div class="chefs__item-content">
+                  <img src="/food-delivery/img/chefs-2.png" alt="Gregory Flores" class="chefs__item-avatar">
+                  <div class="chefs__item-text">
+                     <p class="chefs__item-name">
+                        Annette Cooper
+                     </p>
+                     <p class="chefs__item-subtitle">
+                        Chef of the hot
+                     </p>
+                  </div>
+               </div>
+               <div class="chefs__item-pic">
+                  <img src="/food-delivery/img/annette-img-big.jpg" alt="" class="chefs__item-img img-big">
+                  <img src="/food-delivery/img/annette-img-sm1.jpg" alt="" class="chefs__item-img img-sm">
+                  <img src="/food-delivery/img/annette-img-sm2.jpg" alt="" class="chefs__item-img img-sm">
+               </div>
+            </div>
+            <div class="chefs__item">
+               <div class="chefs__item-content">
+                  <img src="/food-delivery/img/chefs-3.png" alt="Gregory Flores" class="chefs__item-avatar">
+                  <div class="chefs__item-text">
+                     <p class="chefs__item-name">
+                        Greg Fox
+                     </p>
+                     <p class="chefs__item-subtitle">
+                        Сhef macro kitchen
+                     </p>
+                  </div>
+               </div>
+               <div class="chefs__item-pic">
+                  <img src="/food-delivery/img/greg-img-big.jpg" alt="" class="chefs__item-img img-big">
+                  <img src="/food-delivery/img/greg-img-sm1.jpg" alt="" class="chefs__item-img img-sm">
+                  <img src="/food-delivery/img/greg-img-sm2.jpg" alt="" class="chefs__item-img img-sm">
+               </div>
+            </div>
+         </div>
       </div>
    </section>
    <!-- chefs end -->
+
+   <!-- social start -->
+   <section class="social">
+      <div class="wrapper">
+         <div class="section__titles">
+            <h2 class="section__title">
+               SOCIAL
+            </h2>
+            <h3 class="section__subtitle">
+               We in Social
+            </h3>
+         </div>
+         <div class="social__items">
+
+         </div>
+      </div>
+   </section>
+   <!-- social end -->
 </main>
 
 <footer class="footer">
@@ -426,6 +500,17 @@
       </p>
    </div>
 </footer>
+<a href="#header" class="btn-up js-scroll">
+   <svg class="brn-up-svg"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 490.523 490.523" style="enable-background:new 0 0 490.523 490.523;" xml:space="preserve">
+      <path style="fill: #ffffff;;" d="M487.411,355.047L252.744,120.38c-4.165-4.164-10.917-4.164-15.083,0L2.994,355.047
+	      c-4.093,4.237-3.976,10.99,0.262,15.083c4.134,3.993,10.687,3.993,14.821,0l227.115-227.115l227.115,227.136
+	      c4.237,4.093,10.99,3.976,15.083-0.261c3.993-4.134,3.993-10.688,0-14.821L487.411,355.047z"/>
+      <path d="M479.859,373.266c-2.831,0.005-5.548-1.115-7.552-3.115L245.192,143.015L18.077,370.151
+	      c-4.237,4.093-10.99,3.976-15.083-0.262c-3.993-4.134-3.993-10.687,0-14.821l234.667-234.667c4.165-4.164,10.917-4.164,15.083,0
+         l234.667,234.667c4.159,4.172,4.148,10.926-0.024,15.085C485.388,372.146,482.681,373.265,479.859,373.266z"/>
+   </svg>
+</a>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="/food-delivery/js/slick.min.js"></script>
 <script src="/food-delivery/js/main.js"></script>
