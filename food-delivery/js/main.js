@@ -3,6 +3,14 @@ $(document).ready(function(){
       infinite: true,
       slidesToShow: 2,
       slidesToScroll: 1,
+      responsive: [
+          {
+              breakpoint: 1100,
+              settings: {
+                slidesToShow: 1,
+              }
+          }
+      ]
    });
  });
 
