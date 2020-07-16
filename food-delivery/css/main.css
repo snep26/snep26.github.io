@@ -607,9 +607,11 @@ body {
 
 /*===INTRO START===*/
 .intro {
-   height: 100vh;
+   min-height: 80vh;
    background: url(/food-delivery/img/intro-bg.jpg) no-repeat center;
    background-size: cover;
+   padding-bottom: 220px;
+
 }
 
 .intro__title {
@@ -1061,9 +1063,39 @@ body {
     .chefs__items {
         max-width: 55%;
     }
+
+    .about__slider-items {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 600px) {
+    .brn-up-svg {
+        opacity: 0.5;
+        width: 25px;
+    }
+
+    .intro__title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .intro__contacts {
+        flex-direction: column;
+    }
+
+    .intro__contacts__item {
+        margin-bottom: 35px;
+    }
+
+    .about__title {
+        font-size: 80px;
+    }
+
+    .about__subtitle {
+        font-size: 25px;
+    }
+
     .section__titles {
         padding-top: 15px;
     }
@@ -1074,6 +1106,24 @@ body {
 
     .chefs__items {
         max-width: 70%;
+    }
+
+    .section__title {
+        font-size: 80px;
+        line-height: 120px;
+    }
+
+    .section__subtitle {
+        font-size: 30px;
+        line-height: 45px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .btn-up {
+        right: 10px;
+        bottom: 10px;
     }
 }
 /*===RESPONSIVE END===*/
